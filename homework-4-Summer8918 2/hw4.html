@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Visualization – Homework 4</title>
+    <title>Visualization</title>
 
     <link rel="stylesheet" href="styles.css" />
 
@@ -14,12 +14,44 @@
     <script src="js/line-chart.js"></script>
     <script src="js/map.js"></script>
     <script src="js/script.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin: 0;
+            color: #343a40;
+        }
+
+        .header p {
+            font-size: 1.2em;
+            margin: 10px 0 0;
+            color: #6c757d;
+        }
+        #pie-chart {
+            width: 600px;
+            height: 400px;
+            margin: 0 auto;
+        }
+    </style>
+
 </head>
 
 <body>
     <div class="header">
-        <h1>COVID-19 World Case Tracker</h1>
-        <p>Name: Jie Yang; E-Mail: u1471898@umail.utah.edu; UID: 1471898</p>
+        <h1>Global epidemic case track</h1>
+        <p>Tina Chen & Jenny Zhan </p>
     </div>
 
     <div id="content">
@@ -27,14 +59,19 @@
             <g id="graticules"></g>
             <g id="countries"></g>
         </svg>
+        <!-- <svg id="line-chart">
+            <g id="x-axis"></g>
+            <g id="y-axis"></g>
+            <g id="lines"></g>
+            <g id="overlay"><line></line></g>
+        </svg> -->
         <svg id="line-chart">
             <g id="x-axis"></g>
             <g id="y-axis"></g>
             <g id="lines"></g>
             <g id="overlay"><line></line></g>
         </svg>
-        <div id="map-container"></div>
-        <button id="clear-button">Clear Selected Countries</button>
+        <!-- <div id="map-container"></div> -->
     </div>
 </body>
 

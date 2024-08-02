@@ -1,9 +1,8 @@
-  
-/**
- * Data structure for the data associated with an individual country.
- * the CountryData class will be used to keep the data for drawing your map.
- * You will use the region to assign a class to color the map!
- */
+
+/*
+  CountryData Help to drawing your map
+*/
+
 class CountryData {
   /**
    *
@@ -103,7 +102,7 @@ class MapVis {
     // Define a color scale, for example using d3.scaleQuantize
     let colorScale = d3.scaleLinear()
       .domain([0, max_total_cases_per_million])
-      .range(['#FFFFE0', '#BD0026']); // Adjust the color range as needed
+      .range(['#E0F7E0', '#006400']); // Adjust the color range as needed
 
     svg.selectAll("path")
       .data(countryData)

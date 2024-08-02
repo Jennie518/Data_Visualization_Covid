@@ -1,5 +1,4 @@
 // ******* DATA LOADING *******
-// We took care of that for you
 async function loadData () {
   const covidData = await d3.csv('data/owid-covid.csv');
   const mapData = await d3.json('data/world.json');
